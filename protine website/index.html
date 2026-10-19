@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PUMPD – Protein that actually tastes good</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">PUMPD<span>.</span></a>
+      <div class="links"><a href="#shop">Shop</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+      <button class="btn cartbtn" id="openCart" aria-label="Open cart">Cart <b id="count">0</b></button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Protein that <em id="word">slaps.</em></h1>
+      <p class="lead">25g of clean protein, zero chalky aftertaste, and flavors your gym bag will brag about. Shake it, sip it, post it.</p>
+      <div class="cta">
+        <a class="btn" href="#shop">Shop the drop</a>
+        <a class="btn alt" href="#why">Why PUMPD?</a>
+      </div>
+      <div class="flavors" role="group" aria-label="Pick a flavor">
+        <small>Pick your flavor:</small>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="blob"></div>
+      <div class="sticker s1">Only 120 cal</div>
+      <div class="sticker s2">No sugar crash</div>
+      <div class="tub" aria-label="PUMPD protein tub">
+        <div class="lid"></div>
+        <div class="body">
+          <div class="brand">PUMPD</div>
+          <div class="fl" id="tubFlavor">Strawberry Milk</div>
+          <div class="g">25g protein · 1kg</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div id="tick"></div></div>
+
+<section>
+  <div class="wrap">
+    <h2>Numbers, not vibes.</h2>
+    <div class="stats">
+      <div class="stat"><b data-to="25">0</b>grams of protein per scoop</div>
+      <div class="stat"><b data-to="2">0</b>grams of sugar, max</div>
+      <div class="stat"><b data-to="12">0</b>flavors, none boring</div>
+      <div class="stat"><b data-to="50">0</b>k+ people hitting goals</div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <h2>Pick your fuel.</h2>
+      <p>Whey, plant-based or on-the-go bars. Free shipping over ₹999.</p>
+    </div>
+    <div class="grid" id="products"></div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <h2>Built different, tastes better.</h2>
+    <div class="feat">
+      <div><div class="ic">🧪</div><h3>Lab tested</h3><p>Every batch is checked by a third-party lab. Scan the QR on the tub to see results.</p></div>
+      <div><div class="ic">🌱</div><h3>Clean ingredients</h3><p>No artificial dyes, no fillers, no proprietary blends hiding the label.</p></div>
+      <div><div class="ic">🥤</div><h3>Mixes in seconds</h3><p>Smooth with a shaker or a spoon. No clumps, no sludge at the bottom.</p></div>
+      <div><div class="ic">♻️</div><h3>Recyclable packaging</h3><p>Tubs and scoops are fully recyclable. Rinse, recycle, repeat.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>The group chat approves.</h2>
+    <div class="rev">
+      <blockquote><div class="stars">★★★★★</div>Tastes like a milkshake and I actually hit my protein goal now. Hostel-friendly too.<cite>Aarav, college student</cite></blockquote>
+      <blockquote><div class="stars">★★★★★</div>Switched from my old brand and the difference in bloating is real. Mango is unreal.<cite>Meera, gym regular</cite></blockquote>
+      <blockquote><div class="stars">★★★★☆</div>The plant protein finally doesn't taste like grass. Subscribed after one tub.<cite>Kabir, runner</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2>Quick answers.</h2>
+    <div class="faq">
+      <details><summary>How much protein should I take daily?</summary><p>It depends on your weight and goals. Many active people aim for around 1.2 to 2 grams per kg of body weight from all food sources. Check with a doctor or dietitian for advice that fits you.</p></details>
+      <details><summary>Is PUMPD vegetarian?</summary><p>The whey and bars are vegetarian. The Plant Power tub is fully vegan.</p></details>
+      <details><summary>When should I drink it?</summary><p>Whenever it helps you reach your daily protein: after a workout, with breakfast, or as a snack.</p></details>
+      <details><summary>What if I don't like it?</summary><p>Message us within 14 days and we'll swap the flavor or refund you.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="join">
+      <h2>Get 15% off your first tub.</h2>
+      <p>Join the squad for early drops, workout playlists and discount codes. No spam, unsubscribe anytime.</p>
+      <form id="signup" novalidate>
+        <input type="email" id="email" placeholder="you@email.com" aria-label="Email address" required>
+        <button class="btn" type="submit">Claim 15% off</button>
+      </form>
+      <div id="msg" role="status"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><a class="logo" href="#top">PUMPD<span>.</span></a><br>Demo brand for a website concept.</div>
+    <div>Instagram · YouTube · Snapchat</div>
+    <div>*These statements have not been evaluated by a regulator. Not a substitute for medical advice.</div>
+  </div>
+</footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <header><h3>Your cart</h3><button class="btn alt cartbtn" id="closeCart">Close</button></header>
+  <div class="items" id="items"></div>
+  <div class="total"><span>Total</span><span id="total">₹0</span></div>
+  <button class="btn" id="checkout">Checkout</button>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
